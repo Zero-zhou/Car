@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA1F1A3E1D198FDF0071EAA2 /* RHPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1F1A391D198FDF0071EAA2 /* RHPlusButton.m */; };
+		DA1F1A3F1D198FDF0071EAA2 /* RHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1F1A3B1D198FDF0071EAA2 /* RHTabBar.m */; };
+		DA1F1A401D198FDF0071EAA2 /* RHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1F1A3D1D198FDF0071EAA2 /* RHTabBarController.m */; };
+		DA1F1A4D1D1990340071EAA2 /* RHTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1F1A461D1990340071EAA2 /* RHTabBarControllerConfig.m */; };
+		DA229FA81D17B91D00407C13 /* bigShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = DA229FA71D17B91D00407C13 /* bigShadow.png */; };
+		DA6F04F91D24181A0028D1C4 /* 文件5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA6F04F41D24181A0028D1C4 /* 文件5.jpg */; };
+		DA6F04FA1D24181A0028D1C4 /* 文件4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA6F04F51D24181A0028D1C4 /* 文件4.jpg */; };
+		DA6F04FB1D24181A0028D1C4 /* 文件3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA6F04F61D24181A0028D1C4 /* 文件3.jpg */; };
+		DA6F04FC1D24181A0028D1C4 /* 文件2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA6F04F71D24181A0028D1C4 /* 文件2.jpg */; };
+		DA6F04FD1D24181A0028D1C4 /* 文件1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA6F04F81D24181A0028D1C4 /* 文件1.jpg */; };
+		DA8BA4C01D1B84FC005817FC /* UIViewController+RHTabBarControllerExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BA4BF1D1B84FC005817FC /* UIViewController+RHTabBarControllerExtension.m */; };
+		DA973D2E1D16294000C516B6 /* LeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA973D2B1D16294000C516B6 /* LeftSlideViewController.m */; };
+		DA973D2F1D16294000C516B6 /* UIView_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = DA973D2D1D16294000C516B6 /* UIView_extra.m */; };
+		DAD11D721D23CC83001DA566 /* RHGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD11D711D23CC83001DA566 /* RHGuideViewController.m */; };
+		DAF86ED81D1581C3000790D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF86ED71D1581C3000790D3 /* main.m */; };
+		DAF86EDB1D1581C3000790D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF86EDA1D1581C3000790D3 /* AppDelegate.m */; };
+		DAF86EDE1D1581C3000790D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF86EDD1D1581C3000790D3 /* ViewController.m */; };
+		DAF86EE11D1581C3000790D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF86EDF1D1581C3000790D3 /* Main.storyboard */; };
+		DAF86EE31D1581C3000790D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAF86EE21D1581C3000790D3 /* Assets.xcassets */; };
+		DAF86EE61D1581C3000790D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF86EE41D1581C3000790D3 /* LaunchScreen.storyboard */; };
+		DAF86EF11D1581C3000790D3 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF86EF01D1581C3000790D3 /* ____Tests.m */; };
+		DAF86EFC1D1581C3000790D3 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF86EFB1D1581C3000790D3 /* ____UITests.m */; };
+		DAF86F0A1D15821F000790D3 /* LoginSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF86F091D15821F000790D3 /* LoginSB.storyboard */; };
+		DAF86F0F1D1594FA000790D3 /* LoginBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF86F0E1D1594FA000790D3 /* LoginBaseViewController.m */; };
+		DAF86F121D159515000790D3 /* RHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF86F111D159515000790D3 /* RHLoginViewController.m */; };
+		DAF86F151D15952A000790D3 /* RHRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF86F141D15952A000790D3 /* RHRegisterViewController.m */; };
+		DAF86F181D15953C000790D3 /* RHGetCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF86F171D15953C000790D3 /* RHGetCodeViewController.m */; };
+		DAF86F1B1D159551000790D3 /* RHResetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF86F1A1D159551000790D3 /* RHResetPasswordViewController.m */; };
+		DAF86F1D1D159E55000790D3 /* loginBaseBackImg.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF86F1C1D159E55000790D3 /* loginBaseBackImg.png */; };
+		DAFE39D41D161EE3001E8335 /* keepState@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFE39D31D161EE3001E8335 /* keepState@2x.png */; };
+		DAFE39DE1D1622A8001E8335 /* RHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFE39DD1D1622A8001E8335 /* RHMainViewController.m */; };
+		DAFE39E41D162508001E8335 /* LeftListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFE39E31D162508001E8335 /* LeftListViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAF86EED1D1581C3000790D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAF86ECB1D1581C3000790D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAF86ED21D1581C3000790D3;
+			remoteInfo = "车改联盟";
+		};
+		DAF86EF81D1581C3000790D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAF86ECB1D1581C3000790D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAF86ED21D1581C3000790D3;
+			remoteInfo = "车改联盟";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA1F1A381D198FDF0071EAA2 /* RHPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHPlusButton.h; sourceTree = "<group>"; };
+		DA1F1A391D198FDF0071EAA2 /* RHPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHPlusButton.m; sourceTree = "<group>"; };
+		DA1F1A3A1D198FDF0071EAA2 /* RHTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHTabBar.h; sourceTree = "<group>"; };
+		DA1F1A3B1D198FDF0071EAA2 /* RHTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHTabBar.m; sourceTree = "<group>"; };
+		DA1F1A3C1D198FDF0071EAA2 /* RHTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHTabBarController.h; sourceTree = "<group>"; };
+		DA1F1A3D1D198FDF0071EAA2 /* RHTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHTabBarController.m; sourceTree = "<group>"; };
+		DA1F1A451D1990340071EAA2 /* RHTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHTabBarControllerConfig.h; sourceTree = "<group>"; };
+		DA1F1A461D1990340071EAA2 /* RHTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHTabBarControllerConfig.m; sourceTree = "<group>"; };
+		DA229FA71D17B91D00407C13 /* bigShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bigShadow.png; path = ../../../../bigShadow.png; sourceTree = "<group>"; };
+		DA6F04F41D24181A0028D1C4 /* 文件5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "文件5.jpg"; sourceTree = "<group>"; };
+		DA6F04F51D24181A0028D1C4 /* 文件4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "文件4.jpg"; sourceTree = "<group>"; };
+		DA6F04F61D24181A0028D1C4 /* 文件3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "文件3.jpg"; sourceTree = "<group>"; };
+		DA6F04F71D24181A0028D1C4 /* 文件2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "文件2.jpg"; sourceTree = "<group>"; };
+		DA6F04F81D24181A0028D1C4 /* 文件1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "文件1.jpg"; sourceTree = "<group>"; };
+		DA8BA4BE1D1B84FC005817FC /* UIViewController+RHTabBarControllerExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RHTabBarControllerExtension.h"; sourceTree = "<group>"; };
+		DA8BA4BF1D1B84FC005817FC /* UIViewController+RHTabBarControllerExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RHTabBarControllerExtension.m"; sourceTree = "<group>"; };
+		DA973D2A1D16294000C516B6 /* LeftSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSlideViewController.h; sourceTree = "<group>"; };
+		DA973D2B1D16294000C516B6 /* LeftSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSlideViewController.m; sourceTree = "<group>"; };
+		DA973D2C1D16294000C516B6 /* UIView_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIView_extra.h; sourceTree = "<group>"; };
+		DA973D2D1D16294000C516B6 /* UIView_extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIView_extra.m; sourceTree = "<group>"; };
+		DAD11D701D23CC83001DA566 /* RHGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHGuideViewController.h; sourceTree = "<group>"; };
+		DAD11D711D23CC83001DA566 /* RHGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHGuideViewController.m; sourceTree = "<group>"; };
+		DAF86ED31D1581C3000790D3 /* 车改联盟.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "车改联盟.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF86ED71D1581C3000790D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAF86ED91D1581C3000790D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DAF86EDA1D1581C3000790D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DAF86EDC1D1581C3000790D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DAF86EDD1D1581C3000790D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DAF86EE01D1581C3000790D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAF86EE21D1581C3000790D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAF86EE51D1581C3000790D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAF86EE71D1581C3000790D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF86EEC1D1581C3000790D3 /* 车改联盟Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "车改联盟Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF86EF01D1581C3000790D3 /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		DAF86EF21D1581C3000790D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF86EF71D1581C3000790D3 /* 车改联盟UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "车改联盟UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF86EFB1D1581C3000790D3 /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
+		DAF86EFD1D1581C3000790D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF86F091D15821F000790D3 /* LoginSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginSB.storyboard; sourceTree = "<group>"; };
+		DAF86F0D1D1594FA000790D3 /* LoginBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginBaseViewController.h; path = ../LoginBaseViewController.h; sourceTree = "<group>"; };
+		DAF86F0E1D1594FA000790D3 /* LoginBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginBaseViewController.m; path = ../LoginBaseViewController.m; sourceTree = "<group>"; };
+		DAF86F101D159515000790D3 /* RHLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHLoginViewController.h; sourceTree = "<group>"; };
+		DAF86F111D159515000790D3 /* RHLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHLoginViewController.m; sourceTree = "<group>"; };
+		DAF86F131D15952A000790D3 /* RHRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHRegisterViewController.h; sourceTree = "<group>"; };
+		DAF86F141D15952A000790D3 /* RHRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHRegisterViewController.m; sourceTree = "<group>"; };
+		DAF86F161D15953C000790D3 /* RHGetCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHGetCodeViewController.h; sourceTree = "<group>"; };
+		DAF86F171D15953C000790D3 /* RHGetCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHGetCodeViewController.m; sourceTree = "<group>"; };
+		DAF86F191D159551000790D3 /* RHResetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHResetPasswordViewController.h; sourceTree = "<group>"; };
+		DAF86F1A1D159551000790D3 /* RHResetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHResetPasswordViewController.m; sourceTree = "<group>"; };
+		DAF86F1C1D159E55000790D3 /* loginBaseBackImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loginBaseBackImg.png; path = ../../../loginBaseBackImg.png; sourceTree = "<group>"; };
+		DAFE39D31D161EE3001E8335 /* keepState@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "keepState@2x.png"; path = "../../../../Downloads/keepState@2x.png"; sourceTree = "<group>"; };
+		DAFE39DC1D1622A8001E8335 /* RHMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHMainViewController.h; sourceTree = "<group>"; };
+		DAFE39DD1D1622A8001E8335 /* RHMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHMainViewController.m; sourceTree = "<group>"; };
+		DAFE39E21D162508001E8335 /* LeftListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftListViewController.h; path = ../LeftListViewController.h; sourceTree = "<group>"; };
+		DAFE39E31D162508001E8335 /* LeftListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftListViewController.m; path = ../LeftListViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAF86ED01D1581C3000790D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF86EE91D1581C3000790D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF86EF41D1581C3000790D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA1F1A371D198FDF0071EAA2 /* RHTbaBarController */ = {
+			isa = PBXGroup;
+			children = (
+				DA8BA4BE1D1B84FC005817FC /* UIViewController+RHTabBarControllerExtension.h */,
+				DA8BA4BF1D1B84FC005817FC /* UIViewController+RHTabBarControllerExtension.m */,
+				DA1F1A381D198FDF0071EAA2 /* RHPlusButton.h */,
+				DA1F1A391D198FDF0071EAA2 /* RHPlusButton.m */,
+				DA1F1A3A1D198FDF0071EAA2 /* RHTabBar.h */,
+				DA1F1A3B1D198FDF0071EAA2 /* RHTabBar.m */,
+				DA1F1A3C1D198FDF0071EAA2 /* RHTabBarController.h */,
+				DA1F1A3D1D198FDF0071EAA2 /* RHTabBarController.m */,
+			);
+			path = RHTbaBarController;
+			sourceTree = "<group>";
+		};
+		DA973D291D16294000C516B6 /* LeftSlideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA973D2A1D16294000C516B6 /* LeftSlideViewController.h */,
+				DA973D2B1D16294000C516B6 /* LeftSlideViewController.m */,
+				DA973D2C1D16294000C516B6 /* UIView_extra.h */,
+				DA973D2D1D16294000C516B6 /* UIView_extra.m */,
+				DA229FA71D17B91D00407C13 /* bigShadow.png */,
+			);
+			path = LeftSlideViewController;
+			sourceTree = "<group>";
+		};
+		DAD11D6B1D23CB99001DA566 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DAF86F0D1D1594FA000790D3 /* LoginBaseViewController.h */,
+				DAF86F0E1D1594FA000790D3 /* LoginBaseViewController.m */,
+				DAF86F101D159515000790D3 /* RHLoginViewController.h */,
+				DAF86F111D159515000790D3 /* RHLoginViewController.m */,
+				DAF86F131D15952A000790D3 /* RHRegisterViewController.h */,
+				DAF86F141D15952A000790D3 /* RHRegisterViewController.m */,
+				DAF86F161D15953C000790D3 /* RHGetCodeViewController.h */,
+				DAF86F171D15953C000790D3 /* RHGetCodeViewController.m */,
+				DAF86F191D159551000790D3 /* RHResetPasswordViewController.h */,
+				DAF86F1A1D159551000790D3 /* RHResetPasswordViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		DAD11D6C1D23CBB1001DA566 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DAFE39DC1D1622A8001E8335 /* RHMainViewController.h */,
+				DAFE39DD1D1622A8001E8335 /* RHMainViewController.m */,
+				DAFE39E21D162508001E8335 /* LeftListViewController.h */,
+				DAFE39E31D162508001E8335 /* LeftListViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		DAD11D6D1D23CBCB001DA566 /* Unitls */ = {
+			isa = PBXGroup;
+			children = (
+				DA1F1A451D1990340071EAA2 /* RHTabBarControllerConfig.h */,
+				DA1F1A461D1990340071EAA2 /* RHTabBarControllerConfig.m */,
+				DA1F1A371D198FDF0071EAA2 /* RHTbaBarController */,
+				DA973D291D16294000C516B6 /* LeftSlideViewController */,
+			);
+			name = Unitls;
+			sourceTree = "<group>";
+		};
+		DAD11D6F1D23CBEA001DA566 /* Guide_NewCharView */ = {
+			isa = PBXGroup;
+			children = (
+				DAD11D701D23CC83001DA566 /* RHGuideViewController.h */,
+				DAD11D711D23CC83001DA566 /* RHGuideViewController.m */,
+				DA6F04F41D24181A0028D1C4 /* 文件5.jpg */,
+				DA6F04F51D24181A0028D1C4 /* 文件4.jpg */,
+				DA6F04F61D24181A0028D1C4 /* 文件3.jpg */,
+				DA6F04F71D24181A0028D1C4 /* 文件2.jpg */,
+				DA6F04F81D24181A0028D1C4 /* 文件1.jpg */,
+			);
+			name = Guide_NewCharView;
+			sourceTree = "<group>";
+		};
+		DAF86ECA1D1581C3000790D3 = {
+			isa = PBXGroup;
+			children = (
+				DAF86ED51D1581C3000790D3 /* 车改联盟 */,
+				DAF86EEF1D1581C3000790D3 /* 车改联盟Tests */,
+				DAF86EFA1D1581C3000790D3 /* 车改联盟UITests */,
+				DAF86ED41D1581C3000790D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAF86ED41D1581C3000790D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAF86ED31D1581C3000790D3 /* 车改联盟.app */,
+				DAF86EEC1D1581C3000790D3 /* 车改联盟Tests.xctest */,
+				DAF86EF71D1581C3000790D3 /* 车改联盟UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAF86ED51D1581C3000790D3 /* 车改联盟 */ = {
+			isa = PBXGroup;
+			children = (
+				DAF86ED91D1581C3000790D3 /* AppDelegate.h */,
+				DAF86EDA1D1581C3000790D3 /* AppDelegate.m */,
+				DAF86EDC1D1581C3000790D3 /* ViewController.h */,
+				DAF86EDD1D1581C3000790D3 /* ViewController.m */,
+				DAD11D6D1D23CBCB001DA566 /* Unitls */,
+				DAD11D6C1D23CBB1001DA566 /* ViewController */,
+				DAD11D6B1D23CB99001DA566 /* Login */,
+				DAD11D6F1D23CBEA001DA566 /* Guide_NewCharView */,
+				DAF86F1C1D159E55000790D3 /* loginBaseBackImg.png */,
+				DAFE39D31D161EE3001E8335 /* keepState@2x.png */,
+				DAF86F091D15821F000790D3 /* LoginSB.storyboard */,
+				DAF86EDF1D1581C3000790D3 /* Main.storyboard */,
+				DAF86EE21D1581C3000790D3 /* Assets.xcassets */,
+				DAF86EE41D1581C3000790D3 /* LaunchScreen.storyboard */,
+				DAF86EE71D1581C3000790D3 /* Info.plist */,
+				DAF86ED61D1581C3000790D3 /* Supporting Files */,
+			);
+			path = "车改联盟";
+			sourceTree = "<group>";
+		};
+		DAF86ED61D1581C3000790D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAF86ED71D1581C3000790D3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAF86EEF1D1581C3000790D3 /* 车改联盟Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DAF86EF01D1581C3000790D3 /* ____Tests.m */,
+				DAF86EF21D1581C3000790D3 /* Info.plist */,
+			);
+			path = "车改联盟Tests";
+			sourceTree = "<group>";
+		};
+		DAF86EFA1D1581C3000790D3 /* 车改联盟UITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAF86EFB1D1581C3000790D3 /* ____UITests.m */,
+				DAF86EFD1D1581C3000790D3 /* Info.plist */,
+			);
+			path = "车改联盟UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAF86ED21D1581C3000790D3 /* 车改联盟 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAF86F001D1581C3000790D3 /* Build configuration list for PBXNativeTarget "车改联盟" */;
+			buildPhases = (
+				DAF86ECF1D1581C3000790D3 /* Sources */,
+				DAF86ED01D1581C3000790D3 /* Frameworks */,
+				DAF86ED11D1581C3000790D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "车改联盟";
+			productName = "车改联盟";
+			productReference = DAF86ED31D1581C3000790D3 /* 车改联盟.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAF86EEB1D1581C3000790D3 /* 车改联盟Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAF86F031D1581C3000790D3 /* Build configuration list for PBXNativeTarget "车改联盟Tests" */;
+			buildPhases = (
+				DAF86EE81D1581C3000790D3 /* Sources */,
+				DAF86EE91D1581C3000790D3 /* Frameworks */,
+				DAF86EEA1D1581C3000790D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAF86EEE1D1581C3000790D3 /* PBXTargetDependency */,
+			);
+			name = "车改联盟Tests";
+			productName = "车改联盟Tests";
+			productReference = DAF86EEC1D1581C3000790D3 /* 车改联盟Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAF86EF61D1581C3000790D3 /* 车改联盟UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAF86F061D1581C3000790D3 /* Build configuration list for PBXNativeTarget "车改联盟UITests" */;
+			buildPhases = (
+				DAF86EF31D1581C3000790D3 /* Sources */,
+				DAF86EF41D1581C3000790D3 /* Frameworks */,
+				DAF86EF51D1581C3000790D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAF86EF91D1581C3000790D3 /* PBXTargetDependency */,
+			);
+			name = "车改联盟UITests";
+			productName = "车改联盟UITests";
+			productReference = DAF86EF71D1581C3000790D3 /* 车改联盟UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAF86ECB1D1581C3000790D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = zero;
+				TargetAttributes = {
+					DAF86ED21D1581C3000790D3 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 643752D9CA;
+					};
+					DAF86EEB1D1581C3000790D3 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 643752D9CA;
+						TestTargetID = DAF86ED21D1581C3000790D3;
+					};
+					DAF86EF61D1581C3000790D3 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 643752D9CA;
+						TestTargetID = DAF86ED21D1581C3000790D3;
+					};
+				};
+			};
+			buildConfigurationList = DAF86ECE1D1581C3000790D3 /* Build configuration list for PBXProject "车改联盟" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAF86ECA1D1581C3000790D3;
+			productRefGroup = DAF86ED41D1581C3000790D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAF86ED21D1581C3000790D3 /* 车改联盟 */,
+				DAF86EEB1D1581C3000790D3 /* 车改联盟Tests */,
+				DAF86EF61D1581C3000790D3 /* 车改联盟UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAF86ED11D1581C3000790D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA6F04FD1D24181A0028D1C4 /* 文件1.jpg in Resources */,
+				DA6F04FA1D24181A0028D1C4 /* 文件4.jpg in Resources */,
+				DA6F04F91D24181A0028D1C4 /* 文件5.jpg in Resources */,
+				DAF86F1D1D159E55000790D3 /* loginBaseBackImg.png in Resources */,
+				DA6F04FC1D24181A0028D1C4 /* 文件2.jpg in Resources */,
+				DAF86EE61D1581C3000790D3 /* LaunchScreen.storyboard in Resources */,
+				DA6F04FB1D24181A0028D1C4 /* 文件3.jpg in Resources */,
+				DAF86EE31D1581C3000790D3 /* Assets.xcassets in Resources */,
+				DAF86EE11D1581C3000790D3 /* Main.storyboard in Resources */,
+				DA229FA81D17B91D00407C13 /* bigShadow.png in Resources */,
+				DAF86F0A1D15821F000790D3 /* LoginSB.storyboard in Resources */,
+				DAFE39D41D161EE3001E8335 /* keepState@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF86EEA1D1581C3000790D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF86EF51D1581C3000790D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAF86ECF1D1581C3000790D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF86F121D159515000790D3 /* RHLoginViewController.m in Sources */,
+				DAD11D721D23CC83001DA566 /* RHGuideViewController.m in Sources */,
+				DA1F1A4D1D1990340071EAA2 /* RHTabBarControllerConfig.m in Sources */,
+				DAF86F1B1D159551000790D3 /* RHResetPasswordViewController.m in Sources */,
+				DAF86EDE1D1581C3000790D3 /* ViewController.m in Sources */,
+				DAF86EDB1D1581C3000790D3 /* AppDelegate.m in Sources */,
+				DA1F1A3E1D198FDF0071EAA2 /* RHPlusButton.m in Sources */,
+				DA8BA4C01D1B84FC005817FC /* UIViewController+RHTabBarControllerExtension.m in Sources */,
+				DA1F1A3F1D198FDF0071EAA2 /* RHTabBar.m in Sources */,
+				DAF86F181D15953C000790D3 /* RHGetCodeViewController.m in Sources */,
+				DAFE39E41D162508001E8335 /* LeftListViewController.m in Sources */,
+				DA973D2E1D16294000C516B6 /* LeftSlideViewController.m in Sources */,
+				DA1F1A401D198FDF0071EAA2 /* RHTabBarController.m in Sources */,
+				DAF86F151D15952A000790D3 /* RHRegisterViewController.m in Sources */,
+				DAF86ED81D1581C3000790D3 /* main.m in Sources */,
+				DA973D2F1D16294000C516B6 /* UIView_extra.m in Sources */,
+				DAF86F0F1D1594FA000790D3 /* LoginBaseViewController.m in Sources */,
+				DAFE39DE1D1622A8001E8335 /* RHMainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF86EE81D1581C3000790D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF86EF11D1581C3000790D3 /* ____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF86EF31D1581C3000790D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF86EFC1D1581C3000790D3 /* ____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAF86EEE1D1581C3000790D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAF86ED21D1581C3000790D3 /* 车改联盟 */;
+			targetProxy = DAF86EED1D1581C3000790D3 /* PBXContainerItemProxy */;
+		};
+		DAF86EF91D1581C3000790D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAF86ED21D1581C3000790D3 /* 车改联盟 */;
+			targetProxy = DAF86EF81D1581C3000790D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAF86EDF1D1581C3000790D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAF86EE01D1581C3000790D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAF86EE41D1581C3000790D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAF86EE51D1581C3000790D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAF86EFE1D1581C3000790D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAF86EFF1D1581C3000790D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAF86F011D1581C3000790D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "车改联盟/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zero-zhou.com";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DAF86F021D1581C3000790D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "车改联盟/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zero-zhou.com";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DAF86F041D1581C3000790D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "车改联盟Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zero-zhou.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/车改联盟.app/车改联盟";
+			};
+			name = Debug;
+		};
+		DAF86F051D1581C3000790D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "车改联盟Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zero-zhou.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/车改联盟.app/车改联盟";
+			};
+			name = Release;
+		};
+		DAF86F071D1581C3000790D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "车改联盟UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zero-zhou.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "车改联盟";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DAF86F081D1581C3000790D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "车改联盟UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zero-zhou.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "车改联盟";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAF86ECE1D1581C3000790D3 /* Build configuration list for PBXProject "车改联盟" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF86EFE1D1581C3000790D3 /* Debug */,
+				DAF86EFF1D1581C3000790D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAF86F001D1581C3000790D3 /* Build configuration list for PBXNativeTarget "车改联盟" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF86F011D1581C3000790D3 /* Debug */,
+				DAF86F021D1581C3000790D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAF86F031D1581C3000790D3 /* Build configuration list for PBXNativeTarget "车改联盟Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF86F041D1581C3000790D3 /* Debug */,
+				DAF86F051D1581C3000790D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAF86F061D1581C3000790D3 /* Build configuration list for PBXNativeTarget "车改联盟UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF86F071D1581C3000790D3 /* Debug */,
+				DAF86F081D1581C3000790D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAF86ECB1D1581C3000790D3 /* Project object */;
+}
