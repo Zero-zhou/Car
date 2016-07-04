@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA02DB501D2AA8E9002E5B17 /* RHAdScrollview.m in Sources */ = {isa = PBXBuildFile; fileRef = DA02DB4F1D2AA8E9002E5B17 /* RHAdScrollview.m */; };
 		DA1F1A3E1D198FDF0071EAA2 /* RHPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1F1A391D198FDF0071EAA2 /* RHPlusButton.m */; };
 		DA1F1A3F1D198FDF0071EAA2 /* RHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1F1A3B1D198FDF0071EAA2 /* RHTabBar.m */; };
 		DA1F1A401D198FDF0071EAA2 /* RHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1F1A3D1D198FDF0071EAA2 /* RHTabBarController.m */; };
@@ -59,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA02DB4E1D2AA8E9002E5B17 /* RHAdScrollview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHAdScrollview.h; sourceTree = "<group>"; };
+		DA02DB4F1D2AA8E9002E5B17 /* RHAdScrollview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHAdScrollview.m; sourceTree = "<group>"; };
 		DA1F1A381D198FDF0071EAA2 /* RHPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHPlusButton.h; sourceTree = "<group>"; };
 		DA1F1A391D198FDF0071EAA2 /* RHPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHPlusButton.m; sourceTree = "<group>"; };
 		DA1F1A3A1D198FDF0071EAA2 /* RHTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHTabBar.h; sourceTree = "<group>"; };
@@ -201,6 +204,8 @@
 			children = (
 				DA1F1A451D1990340071EAA2 /* RHTabBarControllerConfig.h */,
 				DA1F1A461D1990340071EAA2 /* RHTabBarControllerConfig.m */,
+				DA02DB4E1D2AA8E9002E5B17 /* RHAdScrollview.h */,
+				DA02DB4F1D2AA8E9002E5B17 /* RHAdScrollview.m */,
 				DA1F1A371D198FDF0071EAA2 /* RHTbaBarController */,
 				DA973D291D16294000C516B6 /* LeftSlideViewController */,
 			);
@@ -440,6 +445,7 @@
 				DAF86EDB1D1581C3000790D3 /* AppDelegate.m in Sources */,
 				DA1F1A3E1D198FDF0071EAA2 /* RHPlusButton.m in Sources */,
 				DA8BA4C01D1B84FC005817FC /* UIViewController+RHTabBarControllerExtension.m in Sources */,
+				DA02DB501D2AA8E9002E5B17 /* RHAdScrollview.m in Sources */,
 				DA1F1A3F1D198FDF0071EAA2 /* RHTabBar.m in Sources */,
 				DAF86F181D15953C000790D3 /* RHGetCodeViewController.m in Sources */,
 				DAFE39E41D162508001E8335 /* LeftListViewController.m in Sources */,
