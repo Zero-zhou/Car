@@ -9,6 +9,7 @@
 #import "RHMainViewController.h"
 #import "RHLoginViewController.h"
 #import "AppDelegate.h"
+#import "RHAdScrollview.h"
 @interface RHMainViewController ()
 
 @end
@@ -26,6 +27,10 @@
     tempAppdelegate.mainNavigationController.navigationBar.tintColor = [UIColor clearColor];
     tempAppdelegate.mainNavigationController.navigationBar.translucent = YES;
     tempAppdelegate.mainNavigationController.navigationBar.alpha = 0;
+    
+    RHAdScrollview *adView = [[RHAdScrollview alloc]initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 200) scrollDirection:LKBannerViewScrollDirection_Landscape images:@[@"1",@"2",@"3",@"4"]];
+    adView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:adView];
     //[tempAppdelegate.mainNavigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"bigShadow.png"] forBarMetrics:UIBarMetricsCompact];    // Do any additional setup after loading the view.
 }
 

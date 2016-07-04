@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DA02DB501D2AA8E9002E5B17 /* RHAdScrollview.m in Sources */ = {isa = PBXBuildFile; fileRef = DA02DB4F1D2AA8E9002E5B17 /* RHAdScrollview.m */; };
+		DA02DB531D2AB051002E5B17 /* UIView+ITTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA02DB521D2AB051002E5B17 /* UIView+ITTAdditions.m */; };
 		DA1F1A3E1D198FDF0071EAA2 /* RHPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1F1A391D198FDF0071EAA2 /* RHPlusButton.m */; };
 		DA1F1A3F1D198FDF0071EAA2 /* RHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1F1A3B1D198FDF0071EAA2 /* RHTabBar.m */; };
 		DA1F1A401D198FDF0071EAA2 /* RHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1F1A3D1D198FDF0071EAA2 /* RHTabBarController.m */; };
@@ -62,6 +63,8 @@
 /* Begin PBXFileReference section */
 		DA02DB4E1D2AA8E9002E5B17 /* RHAdScrollview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHAdScrollview.h; sourceTree = "<group>"; };
 		DA02DB4F1D2AA8E9002E5B17 /* RHAdScrollview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHAdScrollview.m; sourceTree = "<group>"; };
+		DA02DB511D2AB051002E5B17 /* UIView+ITTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ITTAdditions.h"; sourceTree = "<group>"; };
+		DA02DB521D2AB051002E5B17 /* UIView+ITTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ITTAdditions.m"; sourceTree = "<group>"; };
 		DA1F1A381D198FDF0071EAA2 /* RHPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHPlusButton.h; sourceTree = "<group>"; };
 		DA1F1A391D198FDF0071EAA2 /* RHPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHPlusButton.m; sourceTree = "<group>"; };
 		DA1F1A3A1D198FDF0071EAA2 /* RHTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHTabBar.h; sourceTree = "<group>"; };
@@ -202,6 +205,8 @@
 		DAD11D6D1D23CBCB001DA566 /* Unitls */ = {
 			isa = PBXGroup;
 			children = (
+				DA02DB511D2AB051002E5B17 /* UIView+ITTAdditions.h */,
+				DA02DB521D2AB051002E5B17 /* UIView+ITTAdditions.m */,
 				DA1F1A451D1990340071EAA2 /* RHTabBarControllerConfig.h */,
 				DA1F1A461D1990340071EAA2 /* RHTabBarControllerConfig.m */,
 				DA02DB4E1D2AA8E9002E5B17 /* RHAdScrollview.h */,
@@ -453,6 +458,7 @@
 				DA1F1A401D198FDF0071EAA2 /* RHTabBarController.m in Sources */,
 				DAF86F151D15952A000790D3 /* RHRegisterViewController.m in Sources */,
 				DAF86ED81D1581C3000790D3 /* main.m in Sources */,
+				DA02DB531D2AB051002E5B17 /* UIView+ITTAdditions.m in Sources */,
 				DA973D2F1D16294000C516B6 /* UIView_extra.m in Sources */,
 				DAF86F0F1D1594FA000790D3 /* LoginBaseViewController.m in Sources */,
 				DAFE39DE1D1622A8001E8335 /* RHMainViewController.m in Sources */,

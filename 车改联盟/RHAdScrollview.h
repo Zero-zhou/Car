@@ -8,6 +8,60 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, LKBannerViewScrollDirection)
+{
+    /// 水平滚动
+    LKBannerViewScrollDirection_Landscape,
+    /// 垂直滚动
+    LKBannerViewScrollDirection_Portait
+};
+
+///Page Control 位置
+typedef NS_ENUM(NSInteger, LKBannerViewPageStyle)
+{
+    LKBannerViewPageStyle_None,
+    LKBannerViewPageStyle_Left,
+    LKBannerViewPageStyle_Right,
+    LKBannerViewPageStyle_Middle
+};
+
+@protocol  RHBannerViewDelegate;
 @interface RHAdScrollview : UIView
 
+// 存放所有需要滚动的图片URL NSString
+@property (nonatomic, strong) NSArray *imagesArray;
+// scrollView滚动的方向
+@property (nonatomic, assign) LKBannerViewScrollDirection scrollDirection;
+// 每条显示时间
+@property (nonatomic, assign) NSTimeInterval rollingDelayTime;
+@property (nonatomic, weak) id <RHBannerViewDelegate> delegate;
+
+///请使用该函数初始化
+- (id)initWithFrame:(CGRect)frame scrollDirection:(LKBannerViewScrollDirection)direction images:(NSArray *)images;
+
+///重新设置 imageUrls
+- (void)reloadBannerWithURLs:(NSArray *)imageUrls;
+///设置 Banner 圆角显示
+- (void)setSquare:(NSInteger)asquare;
+///设置 Banner 样式，默认PageControl居中
+- (void)setPageControlStyle:(LKBannerViewPageStyle)pageStyle;
+///设置是否显示关闭按钮，默认不显示
+- (void)showClose:(BOOL)show;
+
+///开起自动滚动 ， 默认不开始自动滚动，请手动开启
+- (void)startRolling;
+- (void)stopRolling;
+
+
 @end
+
+@protocol RHBannerViewDelegate <NSObject>
+
+@optional
+///点击图片
+- (void)bannerView:(RHAdScrollview *)bannerView didSelectImageView:(NSInteger)index withURL:(NSString *)imageURL;
+///点击关闭按钮
+- (void)bannerViewdidClosed:(RHAdScrollview *)bannerView;
+
+@end
+
