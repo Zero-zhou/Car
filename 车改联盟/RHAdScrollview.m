@@ -8,7 +8,9 @@
 
 #import "RHAdScrollview.h"
 
-#define Banner_StartTag     1000
+#define Banner_Images_StartTag     1230
+#define Banner_Titles_StartTag     2340
+
 #define Banner_RollingDelayTime 4
 
 @interface RHAdScrollview ()<UIScrollViewDelegate>
@@ -31,15 +33,24 @@
 
 @implementation RHAdScrollview
 
-- (id)initWithFrame:(CGRect)frame scrollDirection:(LKBannerViewScrollDirection)direction images:(NSArray *)images{
+- (id)initWithFrame:(CGRect)frame scrollDirection:(RHBannerViewScrollDirection)direction imagesArray:(NSArray *)images titlesArray:(NSArray *)titles{
     self = [super initWithFrame:frame];
     
     if (self) {
         
         //****************** Property *********
-        self.imagesArray = [[NSArray alloc] initWithArray:images];
+        if (images == nil && titles != nil) {
+            self.contentArray = [[NSArray alloc] initWithArray:titles];
+            self.scrollviewType = RHScrollviewType_titles;
+        }else if (images != nil && titles == nil){
+            self.contentArray = [[NSArray alloc] initWithArray:images];
+            self.scrollviewType = RHScrollviewType_images;
+        }else if (images != nil && titles != nil){
+            
+        }
+        
         self.scrollDirection = direction;
-        self.totalPage = self.imagesArray.count;
+        self.totalPage = self.contentArray.count;
         self.curPageIndex = 0;
         _rollingDelayTime = Banner_RollingDelayTime;
         //****************** Scroll View *********
@@ -56,30 +67,70 @@
             self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width,
                                                      self.scrollView.frame.size.height * 3);
         }
-        //向 Scroll View 添加 Image View
-        for (NSInteger i = 0; i < 3; i++)
-        {
-            UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.scrollView.bounds];
-            imageView.userInteractionEnabled = YES;
-            imageView.contentMode = UIViewContentModeScaleAspectFit;
-            imageView.tag = Banner_StartTag+i;
-            
-            UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
-            [imageView addGestureRecognizer:singleTap];
-            
-            // 水平滚动
-            if(self.scrollDirection == LKBannerViewScrollDirection_Landscape)
+        //向 Scroll View 添加 content
+        switch (self.scrollviewType) {
+            case RHScrollviewType_images:
             {
-                imageView.frame = CGRectOffset(imageView.frame, self.scrollView.frame.size.width * i, 0);
+                for (NSInteger i = 0; i < self.contentArray.count; i++)
+                {
+                    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.scrollView.bounds];
+                    imageView.userInteractionEnabled = YES;
+                    imageView.contentMode = UIViewContentModeScaleAspectFit;
+                    imageView.tag = Banner_Images_StartTag+i;
+                    
+                    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+                    [imageView addGestureRecognizer:singleTap];
+                    
+                    // 水平滚动
+                    if(self.scrollDirection == LKBannerViewScrollDirection_Landscape)
+                    {
+                        imageView.frame = CGRectOffset(imageView.frame, self.scrollView.frame.size.width * i, 0);
+                    }
+                    // 垂直滚动
+                    else if(self.scrollDirection == LKBannerViewScrollDirection_Portait)
+                    {
+                        imageView.frame = CGRectOffset(imageView.frame, 0, self.scrollView.frame.size.height * i);
+                    }
+                    
+                    [self.scrollView addSubview:imageView];
+                }
+
             }
-            // 垂直滚动
-            else if(self.scrollDirection == LKBannerViewScrollDirection_Portait)
+                break;
+            case RHScrollviewType_titles:
             {
-                imageView.frame = CGRectOffset(imageView.frame, 0, self.scrollView.frame.size.height * i);
+                for (NSInteger i = 0; i < self.contentArray.count; i++)
+                {
+                    UILabel *label = [[UILabel alloc]initWithFrame:self.scrollView.bounds];
+                    label.userInteractionEnabled = YES;
+                    label.textAlignment = NSTextAlignmentCenter;
+                    label.contentMode = UIViewContentModeScaleAspectFit;
+                    label.tag = Banner_Titles_StartTag + i;
+                    
+                    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+                    [label addGestureRecognizer:singleTap];
+                    
+                    // 水平滚动
+                    if(self.scrollDirection == LKBannerViewScrollDirection_Landscape)
+                    {
+                        label.frame = CGRectOffset(label.frame, self.scrollView.frame.size.width * i, 0);
+                    }
+                    // 垂直滚动
+                    else if(self.scrollDirection == LKBannerViewScrollDirection_Portait)
+                    {
+                        label.frame = CGRectOffset(label.frame, 0, self.scrollView.frame.size.height * i);
+                    }
+                    
+                    [self.scrollView addSubview:label];
+                }
+
             }
-            
-            [self.scrollView addSubview:imageView];
+                break;
+            default:
+                break;
         }
+        
+        
         [self addSubview:self.scrollView];
         
         //****************** Page Control *********
@@ -94,9 +145,9 @@
     return self;
 }
 
-- (void)reloadBannerWithURLs:(NSArray *)imageUrls{
-    self.imagesArray = [[NSArray alloc] initWithArray:imageUrls];
-    self.totalPage = self.imagesArray.count;
+- (void)reloadBannerWithURLs:(NSArray *)contentUrls{
+    self.contentArray = [[NSArray alloc] initWithArray:contentUrls];
+    self.totalPage = self.contentArray.count;
     self.curPageIndex = 0;
     
     self.pageControl.numberOfPages = self.totalPage;
@@ -122,7 +173,7 @@
     }
 }
 
-- (void)setPageControlStyle:(LKBannerViewPageStyle)pageStyle{
+- (void)setPageControlStyle:(RHBannerViewPageStyle)pageStyle{
     if (pageStyle == LKBannerViewPageStyle_Left)
     {
         [self.pageControl setFrame:CGRectMake(5, self.bounds.size.height-15, 60, 15)];
@@ -147,7 +198,7 @@
 
 #pragma mark Rolling
 - (void)startRolling{
-    if (self.imagesArray.count <= 1) {
+    if (self.contentArray.count <= 1) {
         return;
     }
     
@@ -189,9 +240,9 @@
 #pragma mark - Event
 - (void)handleTap:(UITapGestureRecognizer *)tap
 {
-    if ([self.delegate respondsToSelector:@selector(bannerView:didSelectImageView:withURL:)])
+    if ([self.delegate respondsToSelector:@selector(bannerView:didSelectIndex:withURL:)])
     {
-        [self.delegate bannerView:self didSelectImageView:self.curPageIndex withURL:[self.imagesArray objectAtIndex:self.curPageIndex]];
+        [self.delegate bannerView:self didSelectIndex:self.curPageIndex withURL:[self.contentArray objectAtIndex:self.curPageIndex]];
     }
 }
 - (void)closeBanner
@@ -288,27 +339,58 @@
     NSInteger preIndex = [self getPageIndex:self.curPageIndex-1];
     NSInteger nextIndex = [self getPageIndex:self.curPageIndex+1];
     
-    NSMutableArray *images = [NSMutableArray arrayWithCapacity:0];
+    NSMutableArray *contents = [NSMutableArray arrayWithCapacity:0];
     
-    if (self.imagesArray.count > preIndex) {
-        [images addObject:self.imagesArray[preIndex]];
+    if (self.contentArray.count > preIndex) {
+        [contents addObject:self.contentArray[preIndex]];
     }
-    if (self.imagesArray.count > self.curPageIndex) {
-        [images addObject:self.imagesArray[self.curPageIndex]];
+    if (self.contentArray.count > self.curPageIndex) {
+        [contents addObject:self.contentArray[self.curPageIndex]];
     }
-    if (self.imagesArray.count > nextIndex) {
-        [images addObject:self.imagesArray[nextIndex]];
+    if (self.contentArray.count > nextIndex) {
+        [contents addObject:self.contentArray[nextIndex]];
     }
     
-    return images;
+    return contents;
 }
 
 - (void)refreshScrollView{
     NSArray *curImageUrls = [self getDisplayImagesWithPageIndex:self.curPageIndex];
+    switch (self.scrollviewType) {
+        case RHScrollviewType_images:
+        {
+            for (NSInteger i = 0; i < self.contentArray.count; i++)
+            {
+                UIImageView *imageView = (UIImageView *)[self.scrollView viewWithTag:Banner_Images_StartTag+i];
+                NSString *url = curImageUrls.count > i ? curImageUrls[i] : nil;
+                if (imageView && [imageView isKindOfClass:[UIImageView class]] && url)
+                {
+                    //[imageView sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:nil];
+                }
+            }
+        }
+            break;
+        case RHScrollviewType_titles:
+        {
+            for (NSInteger i = 0; i < self.contentArray.count; i++)
+            {
+                UILabel *label = (UILabel *)[self.scrollView viewWithTag:Banner_Titles_StartTag+i];
+                NSString *url = curImageUrls.count > i ? curImageUrls[i] : nil;
+                if (label && [label isKindOfClass:[UILabel class]] && url)
+                {
+                    label.text = [NSString stringWithFormat:@"%@",url];
+                    //[imageView sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:nil];
+                }
+            }
+        }
+            break;
+        default:
+            break;
+    }
     
-    for (NSInteger i = 0; i < 3; i++)
+    for (NSInteger i = 0; i < self.contentArray.count; i++)
     {
-        UIImageView *imageView = (UIImageView *)[self.scrollView viewWithTag:Banner_StartTag+i];
+        UIImageView *imageView = (UIImageView *)[self.scrollView viewWithTag:Banner_Images_StartTag+i];
         NSString *url = curImageUrls.count > i ? curImageUrls[i] : nil;
         if (imageView && [imageView isKindOfClass:[UIImageView class]] && url)
         {

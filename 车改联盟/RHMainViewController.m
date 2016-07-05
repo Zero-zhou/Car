@@ -10,7 +10,7 @@
 #import "RHLoginViewController.h"
 #import "AppDelegate.h"
 #import "RHAdScrollview.h"
-@interface RHMainViewController ()
+@interface RHMainViewController ()<RHBannerViewDelegate>
 
 @end
 
@@ -28,8 +28,11 @@
     tempAppdelegate.mainNavigationController.navigationBar.translucent = YES;
     tempAppdelegate.mainNavigationController.navigationBar.alpha = 0;
     
-    RHAdScrollview *adView = [[RHAdScrollview alloc]initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 200) scrollDirection:LKBannerViewScrollDirection_Landscape images:@[@"1",@"2",@"3",@"4"]];
-    adView.backgroundColor = [UIColor whiteColor];
+    RHAdScrollview *adView = [[RHAdScrollview alloc]initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 30) scrollDirection:LKBannerViewScrollDirection_Landscape imagesArray:nil titlesArray:@[@"我化尘埃飞扬",@"追寻赤裸回翔",@"我欲乘风破浪",@"踏破黄沙海洋"]];
+    adView.backgroundColor = [UIColor colorWithRed:0.400 green:1.000 blue:1.000 alpha:1.000];
+    [adView setPageControlStyle:LKBannerViewPageStyle_None];
+    [adView startRolling];
+    adView.delegate = self;
     [self.view addSubview:adView];
     //[tempAppdelegate.mainNavigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"bigShadow.png"] forBarMetrics:UIBarMetricsCompact];    // Do any additional setup after loading the view.
 }
@@ -38,6 +41,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)bannerView:(RHAdScrollview *)bannerView didSelectIndex:(NSInteger)index withURL:(NSString *)imageURL{
+    NSLog(@"%ld %@",index,imageURL);
+}
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     
         RHLoginViewController *loginVC = [UIStoryboard storyboardWithName:@"LoginSB" bundle:[NSBundle mainBundle]].instantiateInitialViewController;

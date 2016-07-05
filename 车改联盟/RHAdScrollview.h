@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger, LKBannerViewScrollDirection)
+typedef NS_ENUM(NSInteger, RHScrollviewType) {
+    RHScrollviewType_images,
+    RHScrollviewType_titles
+};
+
+typedef NS_ENUM(NSInteger, RHBannerViewScrollDirection)
 {
     /// 水平滚动
     LKBannerViewScrollDirection_Landscape,
@@ -17,7 +22,7 @@ typedef NS_ENUM(NSInteger, LKBannerViewScrollDirection)
 };
 
 ///Page Control 位置
-typedef NS_ENUM(NSInteger, LKBannerViewPageStyle)
+typedef NS_ENUM(NSInteger, RHBannerViewPageStyle)
 {
     LKBannerViewPageStyle_None,
     LKBannerViewPageStyle_Left,
@@ -28,23 +33,25 @@ typedef NS_ENUM(NSInteger, LKBannerViewPageStyle)
 @protocol  RHBannerViewDelegate;
 @interface RHAdScrollview : UIView
 
-// 存放所有需要滚动的图片URL NSString
-@property (nonatomic, strong) NSArray *imagesArray;
+@property(nonatomic, assign) RHScrollviewType scrollviewType;
+
+// 存放所有需要滚动的内容
+@property (nonatomic, strong) NSArray *contentArray;
 // scrollView滚动的方向
-@property (nonatomic, assign) LKBannerViewScrollDirection scrollDirection;
+@property (nonatomic, assign) RHBannerViewScrollDirection scrollDirection;
 // 每条显示时间
 @property (nonatomic, assign) NSTimeInterval rollingDelayTime;
 @property (nonatomic, weak) id <RHBannerViewDelegate> delegate;
 
 ///请使用该函数初始化
-- (id)initWithFrame:(CGRect)frame scrollDirection:(LKBannerViewScrollDirection)direction images:(NSArray *)images;
+- (id)initWithFrame:(CGRect)frame scrollDirection:(RHBannerViewScrollDirection)direction imagesArray:(NSArray *)images titlesArray:(NSArray *)titles;
 
 ///重新设置 imageUrls
-- (void)reloadBannerWithURLs:(NSArray *)imageUrls;
+- (void)reloadBannerWithURLs:(NSArray *)contentUrls;
 ///设置 Banner 圆角显示
 - (void)setSquare:(NSInteger)asquare;
 ///设置 Banner 样式，默认PageControl居中
-- (void)setPageControlStyle:(LKBannerViewPageStyle)pageStyle;
+- (void)setPageControlStyle:(RHBannerViewPageStyle)pageStyle;
 ///设置是否显示关闭按钮，默认不显示
 - (void)showClose:(BOOL)show;
 
@@ -59,7 +66,7 @@ typedef NS_ENUM(NSInteger, LKBannerViewPageStyle)
 
 @optional
 ///点击图片
-- (void)bannerView:(RHAdScrollview *)bannerView didSelectImageView:(NSInteger)index withURL:(NSString *)imageURL;
+- (void)bannerView:(RHAdScrollview *)bannerView didSelectIndex:(NSInteger)index withURL:(NSString *)imageURL;
 ///点击关闭按钮
 - (void)bannerViewdidClosed:(RHAdScrollview *)bannerView;
 
